@@ -1,7 +1,6 @@
 from selene import browser, be
 
 
-
 def test_desktop_browser(browser_desktop_settings):
     browser.open('https://github.com')
     browser.element('.HeaderMenu-link--sign-in').should(be.visible).click()
